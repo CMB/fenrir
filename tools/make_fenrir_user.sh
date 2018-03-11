@@ -9,4 +9,4 @@ grep ^input: /etc/group &> /dev/null || {
 }
 
 # Add fenrirscreenreader
-id fenrirscreenreader &> /dev/null || useradd -N -g input -s /bin/nologin  fenrirscreenreader
+id fenrirscreenreader &> /dev/null || useradd -N -g input -G dbus -s /bin/nologin  fenrirscreenreader
